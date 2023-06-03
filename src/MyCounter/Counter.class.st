@@ -16,6 +16,11 @@ Class {
 	#category : #MyCounter
 }
 
+{ #category : #'instance creation' }
+Counter class >> startingAt: anInteger [ 
+	^ self new count: anInteger
+]
+
 { #category : #accessing }
 Counter >> count [
 	^ count

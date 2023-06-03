@@ -13,6 +13,11 @@ CounterTest >> testCountIsSetAndRead [
 ]
 
 { #category : #tests }
+CounterTest >> testCounterStartingAt [
+	self assert: (Counter startingAt: 3) count equals: 3
+]
+
+{ #category : #tests }
 CounterTest >> testDecrement [
 	| c |
 	c := Counter new.
